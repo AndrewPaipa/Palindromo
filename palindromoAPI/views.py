@@ -4,6 +4,7 @@ from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from django.views import View
+import json
 
 
 # Create your views here.
@@ -15,5 +16,12 @@ class Palindromo(View):
 
     def get(self, request):
         # get...
-        clist = {'message':'success'}
-        return JsonResponse(clist)
+        cmessageGET = {'message':'success'}
+        return JsonResponse(cmessageGET)
+
+    def post(self, request):
+        #post ...
+        expresion = json.loads(request.body)
+        print(expresion)
+        cmessagePOST = {'message':'success'}
+        return JsonResponse(cmessagePOST)
