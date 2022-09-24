@@ -8,16 +8,26 @@ import json
 from .palindromoScr import funtionPalindromo
 
 # Create your views here.
+
+# Clase palindromo
+
+
 class Palindromo(View):
+
+    #Decorador para omitir token csrf
 
     @method_decorator(csrf_exempt)
     def dispatch(self, request, *args, **kwargs):
         return super().dispatch(request, *args, **kwargs)
 
+    #Metodo get de /palindromo/
+
     def get(self, request):
         # get...
         cmessageGET = {'message':'GET success'}
         return JsonResponse(cmessageGET)
+
+    #Metodo post de /palindromo/
 
     def post(self, request):
         #post ...
@@ -30,18 +40,25 @@ class Palindromo(View):
         
         return JsonResponse(cmessagePOST)
 
+    #Metodo put de /palindromo/
+
     def put(self, request):
         # put...
         cmessagePUT = {'message':'PUT success'}
         return JsonResponse(cmessagePUT)
     
+    #Metodo delete de /palindromo/
+
     def delete(self, request):
         # delete...
         cmessageDELETE = {'message':'DELETE success'}
         return JsonResponse(cmessageDELETE)
 
 
+
 class Index(View):
+
+    #Metodo get de /
 
     def get(self, request):
         # get...
