@@ -30,6 +30,16 @@ class Palindromo(View):
         
         return JsonResponse(cmessagePOST)
 
+    def put(self, request):
+        # put...
+        cmessagePUT = {'message':'PUT success'}
+        return JsonResponse(cmessagePUT)
+    
+    def delete(self, request):
+        # delete...
+        cmessageDELETE = {'message':'DELETE success'}
+        return JsonResponse(cmessageDELETE)
+
 
 class Index(View):
 
