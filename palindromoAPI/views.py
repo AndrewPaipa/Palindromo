@@ -7,7 +7,7 @@ from django.views import View
 
 
 # Create your views here.
-class CompanyListView(View):
+class Palindromo(View):
 
     @method_decorator(csrf_exempt)
     def dispatch(self, request, *args, **kwargs):
@@ -16,4 +16,4 @@ class CompanyListView(View):
     def get(self, request):
         # get...
         clist = {'message':'success'}
-        return JsonResponse(list(clist)
+        return JsonResponse(clist)
