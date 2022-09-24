@@ -45,14 +45,18 @@ Para realizar el método POST, se selecciona este método se introduce la url:
 
 Selecciona Body y escribes el siguiente JSON:
 
-*{
-  "expression":" La cadena que quieras enviar  "
-}*
+*{*
+
+  *"expression":" La cadena que quieras enviar  "*
+  
+*}*
 
 La API te responderá con un JSON como el siguiente:
 
-*{
-  "message": "POST success",
-  "cadena": "Anita lava la tina",
-  "palindromo mas largo": "ava"
-}*
+*{*
+
+  *"message": "POST success",*
+  *"cadena": "Anita lava la tina",*
+  *"palindromo mas largo": "ava"*
+  
+*}*
