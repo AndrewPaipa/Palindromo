@@ -55,8 +55,4 @@ La API te responderá con un JSON como el siguiente:
   "message": "POST success",
   "cadena": "Anita lava la tina",
   "palindromo mas largo": "ava"
-<<<<<<< HEAD
 }*
-=======
-}*
->>>>>>> 8e0318baaee904b6aa5fe894ff75e128cfe72de7
