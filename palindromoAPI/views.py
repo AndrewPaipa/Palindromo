@@ -32,11 +32,11 @@ class Palindromo(View):
     def post(self, request):
         #post ...
         expression = json.loads(request.body)
-        subStr = funtionPalindromo(expression['expresion'])
+        subStr = funtionPalindromo(expression['expression'])
         if subStr == None:
-            cmessagePOST = {'message':'POST success', 'cadena': expression['expresion'], 'palindromo mas largo':'No hay palindromos'}
+            cmessagePOST = {'message':'POST success', 'cadena': expression['expression'], 'palindromo mas largo':'No hay palindromos'}
         else:
-            cmessagePOST = {'message':'POST success', 'cadena': expression['expresion'], 'palindromo mas largo':subStr}
+            cmessagePOST = {'message':'POST success', 'cadena': expression['expression'], 'palindromo mas largo':subStr}
         
         return JsonResponse(cmessagePOST)
 
