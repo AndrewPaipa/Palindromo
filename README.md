@@ -7,6 +7,12 @@ Este es un servicio capaz de reconocer palíndromos dentro de una cadena de text
 
 Sus solicitudes se realizan a través de los métodos HTTP, GET y POST, las respuestas y peticiones se realizan con formato JSON . También cuenta con respuesta a los métodos PUT y DELETE, sin embargo, estos no realizan ningún proceso, además cuenta con manejo de excepciones.
 
+#### Requerimientos
+
+En la maquina o entorno en el que se desee utilizar la API debe de tener:
+-Python 3.5 o superior
+-Pip instalado 
+
 #### despliegue en entorno local
 Debes tener instalado Python para realizar las instrucciones del despliegue local.
 Puedes crear un entorno virtual o realizar el proceso directamente en tu computadora. Una vez hayas clonado el proyecto deberás ejecutar el comando: 
