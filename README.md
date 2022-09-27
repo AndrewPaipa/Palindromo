@@ -10,6 +10,7 @@ Sus solicitudes se realizan a través de los métodos HTTP, GET y POST, las resp
 #### Requerimientos
 
 En la maquina o entorno en el que se desee utilizar la API debe de tener:
+
 -Python 3.5 o superior
 -Pip instalado 
 
