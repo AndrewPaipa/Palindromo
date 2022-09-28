@@ -7,6 +7,8 @@ Este es un servicio capaz de reconocer palíndromos dentro de una cadena de text
 
 Sus solicitudes se realizan a través de los métodos HTTP, GET y POST, las respuestas y peticiones se realizan con formato JSON . También cuenta con respuesta a los métodos PUT y DELETE, sin embargo, estos no realizan ningún proceso, además cuenta con manejo de excepciones.
 
+#### despliegue en entorno loca
+
 #### Requerimientos
 
 En la maquina o entorno en el que se desee utilizar la API debe de tener:
@@ -14,7 +16,7 @@ En la maquina o entorno en el que se desee utilizar la API debe de tener:
 - Python 3.5 o superior
 - Pip instalado 
 
-#### despliegue en entorno local
+
 Debes tener instalado Python para realizar las instrucciones del despliegue local.
 Puedes crear un entorno virtual o realizar el proceso directamente en tu computadora. Una vez hayas clonado el proyecto deberás ejecutar el comando: 
 
@@ -67,3 +69,21 @@ La API te responderá con un JSON como el siguiente:
   *"palindromo mas largo": "ava"*
   
 *}*
+
+#### Despliegue en Docker
+
+#### Requerimientos
+En la maquina o entorno en el que se desee desplegar la API debe de tener:
+- Docker instalado
+- Docker compose instalado
+- Python 3.10
+
+Seguido de esto, en la terminal ubicada en la raíz de la API se debe ejecutar el comando:
+
+*Pip install -r requirements.txt*
+
+Esto instalará las librerías necesarias, una vez se hallan instalado las librerías se ejecuta el siguiente comando:
+
+*docker-compose up –build*
+
+con esto ya tendríamos nuestra API desplegada en Docker.
