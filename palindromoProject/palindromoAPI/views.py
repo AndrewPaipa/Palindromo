@@ -56,11 +56,38 @@ class Palindromo(View):
 
 
 
+
 class Index(View):
+    #Decorador para omitir token csrf
+
+    @method_decorator(csrf_exempt)
+    def dispatch(self, request, *args, **kwargs):
+        return super().dispatch(request, *args, **kwargs)
 
     #Metodo get de /
 
     def get(self, request):
         # get...
-        cmessageGET = {'message':'success'}
+        cmessageGET = {'message':'GETs success'}
         return JsonResponse(cmessageGET)
+    
+    #Metodo post de /
+        
+    def post(self, request):
+        # post...
+        cmessagePOST = {'message':'POST success'}
+        return JsonResponse(cmessagePOST)
+
+    #Metodo put de /
+
+    def put(self, request):
+        # put...
+        cmessagePUT = {'message':'PUT success'}
+        return JsonResponse(cmessagePUT)
+    
+    #Metodo delete de /
+
+    def delete(self, request):
+        # delete...
+        cmessageDELETE = {'message':'DELETE success'}
+        return JsonResponse(cmessageDELETE)
