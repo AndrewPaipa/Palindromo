@@ -68,7 +68,7 @@ class Index(View):
 
     def get(self, request):
         # get...
-        cmessageGET = {'message':'GETs success'}
+        cmessageGET = {'message':'GET success'}
         return JsonResponse(cmessageGET)
     
     #Metodo post de /
