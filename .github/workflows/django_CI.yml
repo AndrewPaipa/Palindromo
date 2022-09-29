@@ -2,7 +2,7 @@ name: django_CI
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ feature_actions_1 ]
   pull_request:
     branches: [ $default-branch ]
 
