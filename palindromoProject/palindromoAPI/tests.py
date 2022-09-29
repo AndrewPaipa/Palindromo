@@ -32,9 +32,9 @@ class UsuarioTestCase(SimpleTestCase):
         response = self.client.get('/palindromo/')
         print(response)
 
-    def test_palindromo_post(self):
-        response = self.client.post('/palindromo/', {'expression':'ojozajaxee'})
-        print(response)
+    #def test_palindromo_post(self):
+        #response = self.client.post('/palindromo/', {'expression':'ojozajaxee'})
+        #print(response)
         
     def test_palindromo_put(self):
         response = self.client.put('/palindromo/')
