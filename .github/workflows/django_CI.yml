@@ -23,4 +23,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
+        ls -l
+        cd palindromoProject/
+        ls -l
         python manage.py test
