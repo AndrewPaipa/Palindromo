@@ -26,4 +26,4 @@ jobs:
         ls -l
         cd palindromoProject/
         ls -l
-        python manage.py test
+        python manage.py runserver
