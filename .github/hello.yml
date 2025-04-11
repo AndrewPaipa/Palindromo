@@ -10,8 +10,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Echo the message
-        run: 
+        run: |
           echo "Hello world!"
-          echo "echo 2"
-
-    
