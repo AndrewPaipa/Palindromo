@@ -12,5 +12,6 @@ jobs:
       - name: Echo the message
         run: 
           echo "Hello world!"
+          echo "echo 2"
 
     
